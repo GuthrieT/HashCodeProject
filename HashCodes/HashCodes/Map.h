@@ -7,13 +7,16 @@ using namespace std;
 template <class valueType>
 class Map
 {
-	vector<valueType> map;
+	Map<valueType>* next;
+	int size;
+	valueType mapVal;
+	std::string mapKey;
 public:
 	Map();
 	~Map();
 
 	bool add(std::string key, valueType value);
-	valueType getValue(std::string key);
+	valueType getValue(std::string key, Map<valueType>* next);
 	bool remove(std::string key);
 	int getSize();
 };
