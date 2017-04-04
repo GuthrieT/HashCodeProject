@@ -12,12 +12,29 @@ Map<valueType>::~Map()
 }
 
 template <class valueType>
-bool Map<valueType>::add(std::string key, valueType value)
+bool Map<valueType>::add(std::string key, valueType value, Map<valueType>* next)
 {
-	size++;
-	mapKey = key;
-	mapVal = value;
-	return true;
+	if (mapKey == "")
+	{
+		size++;
+		mapKey = key;
+		mapVal = value;
+		return true;
+	}
+	else if (next != nullptr)
+	{
+		add(key, value,next->getNext());
+	}
+	else
+	{
+		next = new Map<valueType>;
+		size++;
+		mapKey = key;
+		mapVal = value;
+		return true;
+	}
+	return false;
+	
 }
 template <class valueType>
 valueType Map<valueType>::getValue(std::string key, Map<valueType>* next)
@@ -28,7 +45,7 @@ valueType Map<valueType>::getValue(std::string key, Map<valueType>* next)
 	}
 	else if(next != nullptr)
 	{
-		getValue(key, next);
+		getValue(key,next->getNext());
 	}
 	return NULL;
 }
@@ -42,4 +59,11 @@ template <class valueType>
 int Map<valueType>::getSize()
 {
 	return size;
+}
+
+
+template <class valueType>
+Map<valueType>* Map<valueType>::getNext()
+{
+	return next;
 }
