@@ -1,6 +1,8 @@
-﻿  Map.cpp
-  Generating Code...
-  Skipping... (no relevant changes detected)
-  Runner.cpp
+﻿  Runner.cpp
+c:\users\tguthrie.lrc.000\source\repos\hashcodeproject\hashcodes\hashcodes\runner.cpp(119): warning C4267: 'argument': conversion from 'size_t' to 'char', possible loss of data
+c:\users\tguthrie.lrc.000\source\repos\hashcodeproject\hashcodes\hashcodes\runner.cpp(123): warning C4267: 'argument': conversion from 'size_t' to 'char', possible loss of data
+c:\users\tguthrie.lrc.000\source\repos\hashcodeproject\hashcodes\hashcodes\map.cpp(38): warning C4715: 'Map<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::add': not all control paths return a value
+c:\users\tguthrie.lrc.000\source\repos\hashcodeproject\hashcodes\hashcodes\map.cpp(38): warning C4715: 'Map<int>::add': not all control paths return a value
+c:\users\tguthrie.lrc.000\source\repos\hashcodeproject\hashcodes\hashcodes\map.cpp(38): warning C4715: 'Map<Node>::add': not all control paths return a value
   HashCodes.vcxproj -> C:\Users\tguthrie.LRC.000\Source\Repos\HashCodeProject\HashCodes\Debug\HashCodes.exe
   HashCodes.vcxproj -> C:\Users\tguthrie.LRC.000\Source\Repos\HashCodeProject\HashCodes\Debug\HashCodes.pdb (Full PDB)

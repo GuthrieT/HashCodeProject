@@ -3,18 +3,17 @@
 
 using namespace std;
 
-template<class valueType>
+
 class Node
 {
-	valueType value;
-	std::string key;
+	
+	int value;
 public:
 	Node();
 	~Node();
 
-	void setKey(std::string newKey);
-	void setValue(valueType newValue);
-	std::string getKey();
-	valueType getValue();
+	
+	void setValue(int newValue);
+	int getValue();
 };
 
