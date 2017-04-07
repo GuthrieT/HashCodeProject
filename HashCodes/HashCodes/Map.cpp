@@ -14,7 +14,7 @@ Map<valueType>::~Map()
 template <class valueType>
 bool Map<valueType>::add(std::string key, valueType value, Map<valueType>* next)
 {
-	if (mapKey == "")
+	if (this->mapKey == "")
 	{
 		size++;
 		mapKey = key;

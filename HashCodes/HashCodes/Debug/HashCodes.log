@@ -1,4 +1,2 @@
-﻿  Runner.cpp
-c:\users\tguthrie.lrc\source\repos\hashcodeproject\hashcodes\hashcodes\runner.cpp(21): warning C4267: 'argument': conversion from 'size_t' to 'char', possible loss of data
-c:\users\tguthrie.lrc\source\repos\hashcodeproject\hashcodes\hashcodes\runner.cpp(22): warning C4267: 'argument': conversion from 'size_t' to 'char', possible loss of data
-LINK : fatal error LNK1201: error writing to program database 'C:\Users\tguthrie.LRC\Source\Repos\HashCodeProject\HashCodes\Debug\HashCodes.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+﻿  HashCodes.vcxproj -> C:\Users\Travis\Source\Repos\HashCodeProject\HashCodes\Debug\HashCodes.exe
+  HashCodes.vcxproj -> C:\Users\Travis\Source\Repos\HashCodeProject\HashCodes\Debug\HashCodes.pdb (Full PDB)
